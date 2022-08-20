@@ -6,6 +6,7 @@ import ExpenseTotal from "./componets/ExpenseTotal";
 import ExpenseList from "./componets/ExpenseList";
 import AddExpenseForm from "./componets/AddExpenseForm";
 import { AppProvider } from "./context/AppContext";
+import "./App.css";
 
 const App = () => {
   return (
@@ -17,10 +18,12 @@ const App = () => {
             <Budget />
           </div>
           <div className="col-sm">
-            <Remaining />
-          </div>
-          <div className="col-sm">
-            <ExpenseTotal />
+            <div className="col-sm">
+              <Remaining />
+            </div>
+            <div className="col-sm">
+              <ExpenseTotal />
+            </div>
           </div>
         </div>
         <h3 className="mt-3">Expenses</h3>
